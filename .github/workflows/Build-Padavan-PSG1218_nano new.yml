@@ -63,6 +63,8 @@ jobs:
         ##科学上网##
         echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_SSOBFS=y" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=y" >> .config #smartdns
+        echo "CONFIG_FIRMWARE_INCLUDE_SOCAT=y" >> .config #SOCAT
         ##https##
         echo "CONFIG_FIRMWARE_INCLUDE_HTTPS=y" >> .config #https
         
