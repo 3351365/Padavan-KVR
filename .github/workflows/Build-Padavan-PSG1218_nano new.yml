@@ -61,8 +61,8 @@ jobs:
         #echo "CONFIG_FIRMWARE_INCLUDE_XUPNPD=y" >> .config #IxUPNPd IPTV mediaserver. ~0.3MB
         echo "CONFIG_FIRMWARE_INCLUDE_MSD_LITE=y" >> .config #MSD_LITE
         ##科学上网##
-        #echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y" >> .config
-        #echo "CONFIG_FIRMWARE_INCLUDE_SSOBFS=y" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_SSOBFS=y" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=y" >> .config #smartdns
         echo "CONFIG_FIRMWARE_INCLUDE_SOCAT=y" >> .config #SOCAT
         ##https##
