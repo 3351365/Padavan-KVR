@@ -51,9 +51,13 @@ jobs:
         sed -i '/CONFIG_FIRMWARE_INCLUDE_MSD_LITE/d' .config #MSD_LITE
         sed -i '/CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_SSOBFS/d' .config
+        sed -i '/CONFIG_FIRMWARE_WIFI2_DRIVER/d' .config  #Kernel driver WiFi AP 2.4GHz
+
         ######################################################################
         #以下选项是定义你需要的功能（y=集成,n=忽略），重新写入到.config文件
         ######################################################################
+        
+        echo "CONFIG_FIRMWARE_WIFI2_DRIVER=3.0" >> .config # 3.0 = MT7620 v3.0.4.0
         
         echo "CONFIG_FIRMWARE_INCLUDE_ZEROTIER=n" >> .config #zerotier ~1.3M
         echo "CONFIG_FIRMWARE_INCLUDE_NAPT66=n" >> .config #napt66
